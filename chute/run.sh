@@ -10,7 +10,7 @@
 while true; do
     #
     # NOT IMPLEMENTED
-    iperf -c iperf.wiscnet.i2 -net >> /usr/share/nginx/html/iperf.html
+    iperf -c iperf.wiscnet.net >> /usr/share/nginx/html/iperf.html
 
     sleep 60
 done
