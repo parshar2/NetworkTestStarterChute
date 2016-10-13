@@ -9,10 +9,10 @@ rm /usr/share/nginx/html/iperf.html
 # results.  You can do that directly from this bash script or call another
 # program that you write (e.g. in Python).
 while true; do
-    echo "----------------New Test --------------\n" >> /usr/share/nginx/html/iperf.html
-    echo "--------------- Running iperf for bandwidth measurement\n" >> /usr/share/nginx/html/iperf.html
+    echo "----------------New Test --------------<br>" >> /usr/share/nginx/html/iperf.html
+    echo "--------------- Running iperf for bandwidth measurement<br>" >> /usr/share/nginx/html/iperf.html
     iperf -c iperf.wiscnet.net -i2 >> /usr/share/nginx/html/iperf.html
-    echo "----------------Pinging google --------\n" >> /usr/share/nginx/html/iperf.html
+    echo "----------------Pinging google --------<br>" >> /usr/share/nginx/html/iperf.html
     ping www.google.com -c 5 >> /usr/share/nginx/html/iperf.html
 
     sleep 30
